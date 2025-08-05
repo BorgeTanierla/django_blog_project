@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django Blog Project</title>
+</head>
+<body>
+  <header>
+    <h1><a href="{% url 'home' %}">Django Blog</a></h1>
+  </header>
+  {% for post in posts  %}
+    <article>
+      <time>{{ post.published_date }} by {{ post.author}}</time>
+      <h2><a href="">{{ post.title }}</a></h2>
+      <p>{{ post.text }}</p>
+    </article>
+  {% endfor %}
+
+</body>
+</html>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error temporibus eum architecto ratione corrupti repudiandae iure ex ipsam animi pariatur modi, voluptates totam dolorum ipsum quisquam. Enim sequi totam libero?
