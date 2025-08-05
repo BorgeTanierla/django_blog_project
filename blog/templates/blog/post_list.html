@@ -11,13 +11,12 @@
   </header>
   {% for post in posts  %}
     <article>
-      <time>{{ post.published_date }} by {{ post.author}}</time>
+      <time>published: {{ post.published_date }} by {{ post.author}}</time>
       <h2><a href="">{{ post.title }}</a></h2>
-      <p>{{ post.text }}</p>
+      <p>{{ post.text| linebreaksbr }}</p>
     </article>
   {% endfor %}
 
 </body>
 </html>
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error temporibus eum architecto ratione corrupti repudiandae iure ex ipsam animi pariatur modi, voluptates totam dolorum ipsum quisquam. Enim sequi totam libero?
